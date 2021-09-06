@@ -1,0 +1,19 @@
+2021/5/23 Advanced laravel
+surfside laravel 8 tuto
+
+1.intro
+
+2.api.php
+Route::get('/{name}', function ($name) {
+    return 'Hello ' . $name;
+});
+http://127.0.0.1:8000/api/ramal => hi ramal
+
+Route::get('/{name?}', function ($name=null) {
+    return 'Hello ' . $name;
+});
+http://127.0.0.1:8000/api =>hi
+
+3.HomeController == php artisan make:controller HomeController
+
+4. UserController  ==  php artisan make:controller UserContoller
